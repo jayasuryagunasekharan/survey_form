@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Description</p>
+    <form id="survey-form" action="" method="post">
+
+      <label id="name-label">Name: <input id="name" type="text" placeholder="enter name here..." required></label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="enter email here..." required></label>
+      <label id="number-label">Number: <input id="number" type="number" min="10" max="50" placeholder="enter number here..." required></label>
+
+        <label for="payment">Payment:</label>
+<input id="free" type="radio" name="payment" value="free"> Free
+<input id="paid" type="radio" name="payment" value="paid"> Paid
+<input id="other" type="radio" name="payment" value="other"> Other
+        <select name="select" id="dropdown">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      <fieldset>
+        <legend>Interests</legend>
+        <label for="AI"><input id="paid" type="checkbox" value="AI"> AI</label>
+        <label for="ML"><input id="paid" type="checkbox" value="ML"> ML</label>
+        <label for="SDE"><input id="paid" type="checkbox" value="SDE"> SDE</label>
+        <label for="BA"><input id="paid" type="checkbox" value="BA"> BA</label>
+      </fieldset>
+      <fieldset>
+        <label for="textarea">Details: <textarea id="textarea" placeholder="enter any other important details..."></textarea>
+      </fieldset>
+      <input id="submit" name="submit" type="submit" value="submit">
+    </form>
+    </form>
+    </main>
+  </body>
+</html>
